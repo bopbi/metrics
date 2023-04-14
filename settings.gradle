@@ -2,7 +2,7 @@ pluginManagement {
     repositories {
         mavenLocal {
             content {
-                // Only load Metrics plugin from local Maven (required for the sample project)
+                // Only load Metrics plugin from local Maven (required for the example project)
                 includeGroup "com.bobbyprabowo.metrics"
             }
         }
