@@ -24,7 +24,7 @@ gradlePlugin {
     plugins {
         metricsPlugin {
             id = 'com.bobbyprabowo.metrics'
-            implementationClass = 'com.bobbyprabowo.metrics.MetricsPlugin'
+            implementationClass = 'com.bobbyprabowo.metrics.plugin.MetricsPlugin'
         }
     }
 }

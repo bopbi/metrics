@@ -19,5 +19,7 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "metrics"
-include ':example:app'
 include ':plugin'
+if (!startParameter.projectProperties.containsKey("withoutSample")) {
+    include ':example:app'
+}
