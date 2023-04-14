@@ -8,3 +8,23 @@ java {
     sourceCompatibility = JavaVersion.VERSION_1_7
     targetCompatibility = JavaVersion.VERSION_1_7
 }
+
+dependencies {
+    // compileOnly "com.android.tools.build:gradle:7.4.2"
+}
+
+// The project version will be used as your plugin version when publishing.
+version = '0.0.1'
+group = 'com.bobbyprabowo.metrics'
+
+// Use java-gradle-plugin to generate plugin descriptors and specify both global and individual plugin properties.
+// The names of the blocks inside 'plugins' need to be unique, they will identify the plugins being configured.
+// All properties are mandatory.
+gradlePlugin {
+    plugins {
+        metricsPlugin {
+            id = 'com.bobbyprabowo.metrics'
+            implementationClass = 'com.bobbyprabowo.metrics.MetricsPlugin'
+        }
+    }
+}

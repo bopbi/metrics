@@ -8,6 +8,11 @@ class MetricsPlugin : Plugin<Project> {
     private val name: String = "metrics"
 
     override fun apply(target: Project) {
-        TODO("Not yet implemented")
+        val metricExtension = target.extensions.create(name, MetricExtension::class.java)
+
+        target.plugins.withId("com.android.application") {
+//            val androidComponents =
+//                target.extensions.getByType(ApplicationAndroidComponentsExtension::class.java)
+        }
     }
 }
