@@ -9,6 +9,14 @@ dependencies {
     compileOnly 'com.android.tools.build:bundletool:1.11.4'
     compileOnly 'com.android.tools:common:31.0.0'
     compileOnly 'com.android.tools:sdklib:31.0.0'
+
+    testImplementation gradleTestKit()
+}
+
+java {
+    withSourcesJar()
+
+    toolchain.languageVersion.set(JavaLanguageVersion.of(11))
 }
 
 // The project version will be used as your plugin version when publishing.
@@ -20,7 +28,7 @@ group = 'com.bobbyprabowo.metrics'
 // All properties are mandatory.
 gradlePlugin {
     plugins {
-        metricsPlugin {
+        metrics {
             id = 'com.bobbyprabowo.metrics'
             implementationClass = 'com.bobbyprabowo.metrics.plugin.MetricsPlugin'
         }
