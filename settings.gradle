@@ -22,4 +22,6 @@ rootProject.name = "metrics"
 include ':plugin'
 if (!startParameter.projectProperties.containsKey("withoutSample")) {
     include ':example:app'
+    include ':example:domain:sample-domain'
+    include ':example:feature:sample-feature'
 }
