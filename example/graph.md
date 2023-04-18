@@ -13,9 +13,15 @@ graph LR
     sample-domain
   end
   subgraph feature
+    other-feature
     sample-feature
   end
+  subgraph utility
+    view
+  end
   app --> sample-feature
+  app --> other-feature
+  other-feature --> view
   sample-feature --> sample-domain
 
 ```
