@@ -1,7 +1,6 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
-    id 'com.bobbyprabowo.metrics'
 }
 
 android {
@@ -46,6 +45,3 @@ dependencies {
     implementation project(':example:feature:sample-feature')
 }
 
-metrics {
-
-}

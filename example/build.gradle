@@ -1,0 +1,7 @@
+plugins {
+    id 'com.bobbyprabowo.metrics'
+}
+
+metrics {
+
+}
